@@ -57,3 +57,8 @@ alias db-backup-production='heroku pgbackups:capture --remote production'
 
 # Network
 alias whats-my-ip="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
+
+# Miscellaneous
+alias pgs="ssh pgsmstco@pgsmst.com"
+alias ql="qlmanage -p"
+alias ninite="ssh tech@samba"
