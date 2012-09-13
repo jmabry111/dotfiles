@@ -71,39 +71,3 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # RVM
 [[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# recommended by brew doctor
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin'
-
-# RVM
-[[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# recommended by brew doctor
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/jason/.bin'
-
-# RVM
-[[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# recommended by brew doctor
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/jason/.bin'
-
-# RVM
-[[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# recommended by brew doctor
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/jason/.rvm/gems/ruby-1.9.3-p194/bin:/Users/jason/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/jason/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/jason/.rvm/bin:/Users/jason/.bin'
-
-# RVM
-[[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# RVM
-[[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# recommended by brew doctor
-export PATH='/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/jason/.rvm/gems/ruby-1.9.3-p194/bin:/Users/jason/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/jason/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/jason/.rvm/bin:/Users/jason/.bin'
-
-# RVM
-[[ -s '/Users/jason/.rvm/scripts/rvm' ]] && source '/Users/jason/.rvm/scripts/rvm'
-
-# recommended by brew doctor
-export PATH='/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/jason/.rvm/gems/ruby-1.9.3-p194/bin:/Users/jason/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/jason/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/jason/.rvm/bin:/Users/jason/.bin'
