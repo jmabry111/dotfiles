@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/jason/pgsmst'
 let g:netrw_dirhist_2='/Users/jason/.zsh'
 let g:netrw_dirhist_3='/Users/jason/.ssh'
+let g:netrw_dirhist_4='/Users/jason/rails_projects/gov_school_application/.git'
+let g:netrw_dirhist_5='/Users/jason/rails_projects/gov_school_application/test'
+let g:netrw_dirhist_6='/Users/jason/goodtimeshubot/scripts'
+let g:netrw_dirhist_7='/Users/jason/rails_projects/rubysis/.git'

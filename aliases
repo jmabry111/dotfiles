@@ -17,6 +17,17 @@ alias -g ONE="| awk '{ print \$1}'"
 # git
 alias g="git"
 alias gci="git pull --rebase && rake && git push"
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gb='git branch'
+alias gcb='git checkout -b'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
 # Bundler
 alias b="bundle"
@@ -34,6 +45,7 @@ alias giv="gem install -v"
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate db:migrate:redo db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate mongoid:migrate:redo"
+alias rdb="rake db:migrate && rake db:migrate:redo && rake db:test:prepare"
 
 # Heroku staging
 alias staging='heroku run console --remote staging'
@@ -55,10 +67,12 @@ alias db-pull-production='heroku db:pull --remote production --confirm `producti
 alias db-copy-production-to-staging='heroku pgbackups:restore DATABASE `heroku pgbackups:url --app production-name` --app `staging-name` --confirm `staging-name`'
 alias db-backup-production='heroku pgbackups:capture --remote production'
 
+# Heroku general
+alias hlogs='heroku logs --tail'
 # Network
 alias whats-my-ip="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 
 # Miscellaneous
-alias pgs="ssh pgsmstco@pgsmst.com"
-alias ql="qlmanage -p"
-alias ninite="ssh tech@samba"
+alias pgs='ssh pgsmstco@pgsmst.com'
+alias ql='qlmanage -p'
+alias ninite='ssh tech@samba'
