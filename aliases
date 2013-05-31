@@ -71,9 +71,13 @@ alias db-backup-production='heroku pgbackups:capture --remote production'
 alias hlogs='heroku logs --tail'
 # Network
 alias whats-my-ip="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
-alias router="ssh jason@10.10.14.1"
 
 # Miscellaneous
-alias pgs='ssh pgsmstco@pgsmst.com'
 alias ql='qlmanage -p'
-alias ninite='ssh tech@samba'
+alias replace='search_replace_dir'
+
+
+# Functions
+function search_replace_dir {
+  find "$1" -type f | xargs perl -pi -e "s/"$2"/"$3"/g"
+}

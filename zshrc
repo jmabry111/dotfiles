@@ -8,6 +8,11 @@ compinit
 # automatically enter directories without cd
 setopt auto_cd
 
+#show contents of directory after cd-ing into it
+chpwd() {
+    ls -lrthG
+}
+
 # use vim as an editor
 export EDITOR=vim
 
