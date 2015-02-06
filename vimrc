@@ -1,3 +1,14 @@
+filetype off
+
+" set runtime path to include Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'croaky/vim-colors-github'
+
+call vundle#end()
+
 set history=50
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line

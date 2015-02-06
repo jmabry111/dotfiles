@@ -42,7 +42,7 @@ alias gi="gem install"
 alias giv="gem install -v"
 
 # Rails
-alias migrate="rake db:migrate db:rollback db:migrate db:test:prepare"
+alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate db:migrate:redo db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate mongoid:migrate:redo"
 alias rdb="rake db:migrate && rake db:migrate:redo && rake db:test:prepare"
@@ -81,4 +81,8 @@ alias replace='search_replace_dir'
 # Functions
 function search_replace_dir {
   find "$3" -type f | xargs perl -pi -e "s/"$1"/"$2"/g"
+}
+
+function exportstl {
+  openscad -o "$2" -D 'quality="production"' "$1"
 }
