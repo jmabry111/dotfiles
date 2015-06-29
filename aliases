@@ -77,6 +77,7 @@ alias whats-my-ip="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 # Miscellaneous
 alias ql='qlmanage -p'
 alias replace='search_replace_dir'
+alias console='screen /dev/cu.KeySerial1 9600'
 
 # Functions
 function search_replace_dir {
@@ -85,4 +86,9 @@ function search_replace_dir {
 
 function exportstl {
   openscad -o "$2" -D 'quality="production"' "$1"
+}
+
+shorten (){
+  googl shorten $1 | pbcopy
+  echo "$1 shortened and copied to clipboard"
 }
