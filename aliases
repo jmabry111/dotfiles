@@ -95,3 +95,7 @@ shorten (){
   googl shorten $1 | pbcopy
   echo "$1 shortened and copied to clipboard"
 }
+
+function notify(){
+ osascript -e 'on run {theText}' -e 'display notification theText with title "Terminal Notification" sound name "Blow"' -e 'end run' $1
+}
