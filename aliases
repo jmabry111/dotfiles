@@ -49,6 +49,9 @@ alias rdb="rake db:migrate && rake db:migrate:redo && rake db:test:prepare"
 alias con="rails c"
 alias s="rails s"
 
+# Dev DB
+alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
 # Heroku staging
 alias staging='heroku run console --remote staging'
 alias staging-name='echo `basename $PWD`-staging'
@@ -98,4 +101,13 @@ shorten (){
 
 function notify(){
  osascript -e 'on run {theText}' -e 'display notification theText with title "Terminal Notification" sound name "Blow"' -e 'end run' $1
+}
+
+function shrug(){
+  echo -n "¯\_(ツ)_/¯" | (xsel||pbcopy)
+  echo "¯\_(ツ)_/¯ copied to your clipboard"
+}
+
+function wifipass(){
+  security find-generic-password -ga $1 | grep password:
 }
