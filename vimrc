@@ -2,12 +2,12 @@ filetype off
 
 " set runtime path to include Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'croaky/vim-colors-github'
+" Plugin 'gmarik/Vundle.vim'
+" Plugin 'croaky/vim-colors-github'
 
-call vundle#end()
+" call vundle#end()
 
 set history=50
 set incsearch     " do incremental searching
@@ -61,7 +61,7 @@ if executable("ack")
 endif
 
 " Color scheme
-colorscheme vividchalk
+" colorscheme vividchalk
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
