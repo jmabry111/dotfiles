@@ -1,13 +1,16 @@
 filetype off
 
+let mapleader = " "
+
 " set runtime path to include Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 " call vundle#begin()
 
-" Plugin 'gmarik/Vundle.vim'
+" Plugin 'VundleVim/Vundle.vim'
 " Plugin 'croaky/vim-colors-github'
 
 " call vundle#end()
+" call plug#begin('~/.vim/autoload/plugged')
 
 set history=50
 set incsearch     " do incremental searching
@@ -18,6 +21,10 @@ set noswapfile
 set nowritebackup
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+let g:lightline = { 'colorscheme': 'Dracula' }
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -104,6 +111,9 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" you WILL let me write!!!
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
@@ -111,7 +121,4 @@ let g:html_indent_tags = 'li\|p'
 au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile *.md set filetype=markdown
 
-" Leader: set to <Space>
-" Space is inserted via <C-v><Space>
-" see ':h map_space' in vim for further info
-let mapleader = " "
+source ~/.vim/tests.vim

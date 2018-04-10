@@ -1,0 +1,51 @@
+set nocompatible
+
+filetype off
+call plug#begin('~/.vim/plugged')
+
+" colors
+ Plug 'nanotech/jellybeans.vim'
+ Plug 'tomasr/molokai'
+ Plug 'dracula/vim'
+ Plug 'christophermca/meta5'
+ Plug 'chriskempson/base16-vim'
+
+ " languages
+ Plug 'tpope/vim-markdown'
+ Plug 'xenoterracide/html.vim'
+ Plug 'c-brenn/phoenix.vim'
+
+ " covers a ton of languages https://github.com/sheerun/vim-polyglot
+ Plug 'sheerun/vim-polyglot'
+
+ Plug 'tpope/vim-surround'
+ Plug 'tpope/vim-sensible'
+ Plug 'jgdavey/tslime.vim'
+ Plug 'tomtom/tcomment_vim'
+ Plug 'vim-scripts/ag.vim'
+ Plug 'christoomey/vim-tmux-navigator'
+ Plug 'mustache/vim-mustache-handlebars'
+ Plug 'itchyny/lightline.vim'
+ Plug 'scrooloose/syntastic'
+ Plug 'tomtom/tlib_vim'
+ Plug 'fmoralesc/vim-pad'
+ Plug 'pbrisbin/vim-mkdir'
+ Plug 'derekprior/vim-trimmer'
+ Plug 'christoomey/vim-conflicted'
+ Plug 'janko-m/vim-test'
+ Plug 'skwp/greplace.vim'
+ Plug 'tpope/vim-projectionist'
+ Plug 'ctrlpvim/ctrlp.vim'
+ Plug 'tpope/vim-endwise'
+ Plug 'tpope/vim-fugitive'
+ Plug 'tpope/vim-eunuch'
+
+
+ " snippet stuff
+ Plug 'garbas/vim-snipmate'
+ Plug 'MarcWeber/vim-addon-mw-utils'
+ Plug 'ervandew/supertab'
+ Plug 'dkprice/vim-easygrep'
+
+ call plug#end()
+ filetype on
