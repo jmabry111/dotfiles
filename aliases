@@ -84,6 +84,8 @@ alias console='screen /dev/cu.KeySerial1 9600'
 alias checkmacupdates='sudo softwareupdate -l'
 alias macupdate='sudo softwareupdate -i -a'
 alias lupdate='sudo apt-get update && sudo apt-get upgrade -y'
+alias raid='sudo /opt/MegaRAID/MegaCli/MegaCli64'
+alias sudo='nocorrect sudo'
 
 # Functions
 function search_replace_dir {
@@ -110,4 +112,10 @@ function shrug(){
 
 function wifipass(){
   security find-generic-password -ga $1 | grep password:
+}
+
+function renew(){
+  sudo service apache2 stop
+  sudo letsencrypt renew
+  sudo service apache2 start
 }
