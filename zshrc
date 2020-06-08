@@ -74,3 +74,6 @@ export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X1
 
 
 fpath=(~/.zsh/functions $fpath)
+
+export PATH="$HOME/.bin:$PATH"
+source /Users/jasonmabry/.asdf/asdf.sh

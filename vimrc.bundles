@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'tpope/vim-endwise'
  Plug 'tpope/vim-fugitive'
  Plug 'tpope/vim-eunuch'
+ Plug 'ap/vim-css-color'
 
 
  " snippet stuff
